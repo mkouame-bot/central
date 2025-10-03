@@ -1,6 +1,7 @@
 services:
   nginx:
     environment:
+      - LETSENCRYPT_MAIL=${LETSENCRYPT_MAIL}
       - VIRTUAL_HOST=${DOMAIN}
       - VIRTUAL_PORT=80
       - LETSENCRYPT_HOST=${DOMAIN}
